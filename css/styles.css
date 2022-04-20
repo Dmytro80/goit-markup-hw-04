@@ -75,10 +75,6 @@ img {
   text-decoration: none;
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
 .logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -115,6 +111,10 @@ img {
 
 /* -------------------HEADER------------------- */
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header .container {
   display: flex;
   align-items: center;
@@ -125,12 +125,6 @@ img {
   align-items: center;
 }
 
-.header-list .link,
-.contact-list .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: flex;
-}
 .header-logo {
   margin-right: 93px;
 }
@@ -148,11 +142,21 @@ img {
 }
 
 .header-link {
+  display: flex;
+  align-items: center;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: var(--navigation-font-weight);
   font-size: var(--navigation-font-size);
   line-height: var(--navigation-line-height);
   letter-spacing: var(--navigation-letter-spacing);
   color: var(--main-title-color);
+}
+
+.contact-item > .header-link {
+  color: var(--main-text-color);
 }
 
 .header-link:hover,
@@ -172,48 +176,28 @@ img {
   margin-right: var(--secondary-typical-margin);
 }
 
-.header-mail,
-.header-tel {
-  display: flex;
-  align-items: center;
-
-  font-weight: var(--navigation-font-weight);
-  font-size: var(--navigation-font-size);
-  line-height: var(--navigation-line-height);
-  letter-spacing: var(--navigation-letter-spacing);
-  color: var(--main-text-color);
-}
-
-.header-tel-icon,
-.header-mail-icon {
+.header-icon {
   margin-right: 10px;
 }
 
-.header-mail:hover,
-.header-mail:focus {
-  color: var(--accent-link-color);
-}
-
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--accent-link-color);
-}
-
-.header-tel:hover .header-tel-icon,
-.header-tel:focus .header-tel-icon {
-  fill: var(--accent-link-color);
-}
-
-.header-mail:hover .header-mail-icon,
-.header-mail:focus .header-mail-icon {
+.header-link:hover .header-icon,
+.header-link:focus .header-icon {
   fill: var(--accent-link-color);
 }
 
 /* -------------------HERO------------------- */
 .hero {
-  background-color: var(--secondary-background-color);
+  /* background-color: var(--secondary-background-color); */
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #c4c4c4;
+
+  max-width: 1600px;
 }
 
 .hero-title {
