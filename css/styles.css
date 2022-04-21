@@ -366,6 +366,47 @@ img {
   fill: #ffffff;
 }
 
+/* -------------------CLIENTS------------------- */
+
+.clients-title {
+  margin-bottom: var(--secondary-typical-margin);
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: var(--typical-margin);
+}
+
+.clients-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-item-link:hover,
+.clients-item-link:focus {
+  border-color: var(--accent-link-color);
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.clients-item-link:hover .clients-icon,
+.clients-item-link:focus .clients-icon {
+  fill: var(--accent-link-color);
+}
+
 /* -------------------FOOTER------------------- */
 
 .footer {
