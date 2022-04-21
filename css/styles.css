@@ -188,7 +188,7 @@ img {
 
 /* -------------------HERO------------------- */
 .hero {
-  /* background-color: var(--secondary-background-color); */
+  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
