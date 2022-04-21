@@ -178,6 +178,7 @@ img {
 
 .header-icon {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .header-link:hover .header-icon,
