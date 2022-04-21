@@ -45,10 +45,21 @@
 
         <ul class="contact-list list">
           <li class="contact-item">
-            <a href="mailto:info@devstudio.com" class="header-mail link">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="header-link link">
+              <svg class="header-icon" width="16" height="12">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
+
           <li class="contact-item">
-            <a href="tel:+380961111111" class="header-tel link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="header-link link">
+              <svg class="header-icon" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -88,7 +99,7 @@
 
           <ul class="work-list list">
             <li class="work-item">
-              <a class="link" href="" target="_blank" rel="noopener noreferrer nofollow">
+              <a class="work-link link" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <img
                   src="./images/portfolio1.jpg"
                   alt="ноутбук с открытым сайтом"
@@ -103,7 +114,7 @@
             </li>
 
             <li class="work-item">
-              <a class="link" href="" target="_blank" rel="noopener noreferrer nofollow">
+              <a class="work-link link" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <img
                   src="./images/portfolio2.jpg"
                   alt="два баскетболиста во время игры"
@@ -120,7 +131,7 @@
             </li>
 
             <li class="work-item">
-              <a class="link" href="" target="_blank" rel="noopener noreferrer nofollow">
+              <a class="work-link link" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <img
                   src="./images/portfolio3.jpg"
                   alt="логотип ресторана seafood в виде рыбы"
@@ -135,7 +146,7 @@
             </li>
 
             <li class="work-item">
-              <a class="link" href="" target="_blank" rel="noopener noreferrer nofollow">
+              <a class="work-link link" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <img src="./images/portfolio4.jpg" alt="наушники" width="370" height="294" />
                 <div class="work-content">
                   <h2 class="work-title">Проект <span lang="en">Prime</span></h2>
@@ -145,7 +156,7 @@
             </li>
 
             <li class="work-item">
-              <a class="link" href="" target="_blank" rel="noopener noreferrer nofollow">
+              <a class="work-link link" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <img
                   src="./images/portfolio5.jpg"
                   alt="белая и коричневая упаковочные коробки"
@@ -160,7 +171,7 @@
             </li>
 
             <li class="work-item">
-              <a class="link" href="" target="_blank" rel="noopener noreferrer nofollow">
+              <a class="work-link link" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <img
                   src="./images/portfolio6.jpg"
                   alt="компютер с загруженным сайтом"
@@ -175,7 +186,7 @@
             </li>
 
             <li class="work-item">
-              <a class="link" href="" target="_blank" rel="noopener noreferrer nofollow">
+              <a class="work-link link" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <img src="./images/portfolio7.jpg" alt="открытая книга" width="370" height="294" />
                 <div class="work-content">
                   <h2 class="work-title" lang="en">Издание Limited Edition</h2>
@@ -185,7 +196,7 @@
             </li>
 
             <li class="work-item">
-              <a class="link" href="" target="_blank" rel="noopener noreferrer nofollow">
+              <a class="work-link link" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <img src="./images/portfolio8.jpg" alt="этикетка" width="370" height="294" />
                 <div class="work-content">
                   <h2 class="work-title">Проект <span lang="en">LAB</span></h2>
@@ -195,7 +206,7 @@
             </li>
 
             <li class="work-item">
-              <a class="link" href="" target="_blank" rel="noopener noreferrer nofollow">
+              <a class="work-link link" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <img
                   src="./images/portfolio9.jpg"
                   alt="человек работает на ноутбуке с приложением"
@@ -216,22 +227,64 @@
     <!-- Подвал -->
     <footer class="footer">
       <div class="container">
-        <!-- Логотип -->
-        <a href="./index.html" class="footer-logo logo link"
-          >Web<span class="footer-logo-stylization">Studio</span></a
-        >
-        <!-- Контакты -->
-        <address class="footer-address">
-          <p class="footer-text">г. Киев, пр-т Леси Украинки, 26</p>
-          <ul class="footer-list list">
-            <li class="footer-item">
-              <a href="mailto:info@devstudio.com" class="footer-mail link">info@devstudio.com</a>
+        <div class="address-box">
+          <!-- Логотип -->
+          <a href="./index.html" class="footer-logo logo link"
+            >Web<span class="footer-logo-stylization">Studio</span></a
+          >
+          <!-- Контакты -->
+          <address class="footer-address">
+            <p class="footer-text">г. Киев, пр-т Леси Украинки, 26</p>
+
+            <ul class="footer-list list">
+              <li class="footer-item">
+                <a href="mailto:info@devstudio.com" class="footer-mail link">info@devstudio.com</a>
+              </li>
+
+              <li class="footer-item">
+                <a href="tel:+380961111111" class="footer-tel link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="social-box">
+          <h2 class="footer-social-title">присоединяйтесь</h2>
+
+          <ul class="footer-social-list list">
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icon" widht="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-item">
-              <a href="tel:+380961111111" class="footer-tel link">+38 096 111 11 11</a>
+
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icon" widht="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icon" widht="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icon" widht="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
