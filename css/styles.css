@@ -181,11 +181,6 @@ img {
   fill: currentColor;
 }
 
-.header-link:hover .header-icon,
-.header-link:focus .header-icon {
-  fill: var(--accent-link-color);
-}
-
 /* -------------------HERO------------------- */
 .hero {
   margin: 0 auto;
