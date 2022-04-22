@@ -191,9 +191,11 @@ img {
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-color: #c4c4c4;
 
   max-width: 1600px;
+  min-height: 600px;
 }
 
 .hero-title {
